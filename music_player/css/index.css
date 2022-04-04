@@ -1,0 +1,130 @@
+.body{
+    margin-left: 6rem;
+    background-color: rgb(22, 22, 22);
+}
+.trans{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 6rem;
+    transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: black;
+    overflow: hidden;
+    
+}
+.trans:hover{
+    width: 15rem;
+    
+}
+.back_img{
+    background-image: url(../media/check4.jpg);
+    height: 50vh;
+    width: 100%;
+}
+.content_on_img{
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+.flex_property{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_property_2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.grid_property_1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+}
+
+.br20 {
+    border-radius: 20px;
+}
+.thumbnail {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.m5 {
+    margin: 5px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.darkBG {
+    background-color: black;
+    border-radius: 2px;
+    color: white;
+}
+
+.pl-20 {
+    padding-left: 20;
+}
+
+.hover {
+    color: white;
+    position: relative;
+    transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover:hover {
+    color: maroon;
+}
+
+.hover::after {
+    content: "";
+    position: absolute;
+    background-color: maroon;
+    width: 0;
+    height: 5px;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(-20%);
+}
+
+.hover:hover:after {
+    width: 150%;
+}
+.flex_property_3{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    padding-top: 15rem;
+    padding-left: 2rem;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.fontSize1 {
+    font-size: 36px;
+}
+.footer{
+    display: flex;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+}
+
+/* .audio_links{
+    
+    left: 0;
+    right: 0;
+    
+} */
